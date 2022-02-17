@@ -1,0 +1,57 @@
+img {
+  width: 200px !important;
+  height: 250px !important;
+  transition: .5s;
+}
+
+.spanCard {
+  color: #000;
+}
+
+.spanShow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 20px;
+  transform: rotate(330deg);
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  z-index: 6;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards__sk {
+  height: 100%;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.cards__sk:hover img {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1200px) {
+  .cards__sk {
+    height: 550px;
+  }
+}
+
+@media (min-width: 770px) {
+  .cards__sk {
+    height: 100%;
+  }
+}
+
+
+.sell {
+  border: 1px solid red;
+  position: absolute;
+  font-size: 30px;
+  right: 0;
+  bottom: 0;
+}
